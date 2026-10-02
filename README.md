@@ -10,14 +10,13 @@ A collection of FIFO architectures implemented in Chisel, exploring synchronous,
 ![OpenSTA](https://img.shields.io/badge/OpenSTA-Timing_Analysis-8E24AA?style=flat-square)
 
 ## 🏛️ Architectures
-1) [Synchronous FIFO](Synchronous) - Single-clock FIFO using circular read/write pointers and occupancy tracking
+- [Synchronous FIFO](Synchronous) - Single-clock FIFO using circular read/write pointers and occupancy tracking.
 
-<p align="center">
-  <img src="Synchronous/images/waveform.png" width="1000">
-</p>
-<p align="center">
-<sub>Synchronous FIFO</sub>
-</p>
+<div align="center">
+    <img src="Synchronous/images/waveform.png" 
+         width="1500">
+   <sub></b> <p> Synchronous FIFO </p>
+</div>
 
 ## 🔬 Physical Characterization
 The following table summarizes post-synthesis implementation results obtained using the Sky130 HD standard-cell library.
