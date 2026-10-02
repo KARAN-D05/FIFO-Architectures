@@ -10,12 +10,11 @@ A collection of FIFO architectures implemented in Chisel, exploring synchronous,
 ![OpenSTA](https://img.shields.io/badge/OpenSTA-Timing_Analysis-8E24AA?style=flat-square)
 
 ## 🏛️ Architectures
-- [Synchronous FIFO](Synchronous) - Single-clock FIFO using circular read/write pointers and occupancy tracking
+[Synchronous FIFO](Synchronous) - Single-clock FIFO using circular read/write pointers and occupancy tracking
 
 <p align="center">
   <img src="Synchronous/images/waveform.png" width="1000">
 </p>
-
 <p align="center">
 <sub>Synchronous FIFO</sub>
 </p>
