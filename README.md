@@ -4,7 +4,7 @@ A collection of FIFO architectures implemented in Chisel, exploring synchronous,
 ## 🛠️ Tools & Technologies
 ![Chisel](https://img.shields.io/badge/Chisel-Hardware_Construction-FF6F00?style=flat-square)
 ![Scala](https://img.shields.io/badge/Scala-Elaboration-DC322F?style=flat-square)
-![Icarus Verilog](https://img.shields.io/badge/Icarus_Verilog-Simulation-1E88E5?style=flat-square)
+![Icarus Verilog](https://img.shields.io/badge/IVerilog-Simulation-1E88E5?style=flat-square)
 ![GTKWave](https://img.shields.io/badge/GTKWave-Waveforms-F57C00?style=flat-square)
 ![Yosys](https://img.shields.io/badge/Yosys-Synthesis-43A047?style=flat-square)
 ![OpenSTA](https://img.shields.io/badge/OpenSTA-Static_Timing_Analysis-8E24AA?style=flat-square)
