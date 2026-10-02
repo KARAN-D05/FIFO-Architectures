@@ -1,11 +1,10 @@
 # FIFO Architectures
-A collection of FIFO architectures implemented in Chisel, exploring different requirements for buffering, clock-domain crossing, and flow control.
-
-The project progresses from synchronous FIFOs to asynchronous CDC FIFOs and elastic FIFOs, with Chisel-based verification and SystemVerilog generation.
+A collection of FIFO architectures implemented in Chisel, exploring synchronous, asynchronous (CDC), and elastic FIFO designs. The Chisel implementations are elaborated into SystemVerilog and then taken through a conventional RTL simulation, verification, synthesis, and timing-analysis flow.
 
 ## 🛠️ Tools & Technologies
-![Chisel](https://img.shields.io/badge/Chisel-Hardware_Construction-7B2CBF?style=flat-square)
-![Scala](https://img.shields.io/badge/Scala-Host_Language-DC322F?style=flat-square)
-![SystemVerilog](https://img.shields.io/badge/SystemVerilog-RTL-4A90E2?style=flat-square)
-![Verilator](https://img.shields.io/badge/Verilator-Simulation-00897B?style=flat-square)
-![CIRCT](https://img.shields.io/badge/CIRCT-RTL_Generation-6C63FF?style=flat-square)
+![Scala](https://img.shields.io/badge/Scala-Elaboration-DC322F?style=flat-square)
+![Icarus Verilog](https://img.shields.io/badge/Icarus_Verilog-Simulation-1E88E5?style=flat-square)
+![Verilator](https://img.shields.io/badge/Verilator-Linting-00897B?style=flat-square)
+![GTKWave](https://img.shields.io/badge/GTKWave-Waveforms-F57C00?style=flat-square)
+![Yosys](https://img.shields.io/badge/Yosys-Synthesis-43A047?style=flat-square)
+![OpenSTA](https://img.shields.io/badge/OpenSTA-Static_Timing_Analysis-8E24AA?style=flat-square)
