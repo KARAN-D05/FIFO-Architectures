@@ -89,7 +89,6 @@ class FIFO extends Module {
   io.empty := fifo.io.empty
 }
 
-// Generate SystemVerilog
 object FIFO extends App {
   emitVerilog(new FIFO)
 }
