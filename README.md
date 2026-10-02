@@ -19,7 +19,7 @@ A collection of FIFO architectures implemented in Chisel, exploring synchronous,
 <sub>Synchronous FIFO</sub>
 </p>
 
-## 🔬 Physical Characterization (Sky130HD)
+## 🔬 Physical Characterization
 The following table summarizes post-synthesis implementation results obtained using the Sky130 HD standard-cell library.
 
 > Technology: Sky130 HD
