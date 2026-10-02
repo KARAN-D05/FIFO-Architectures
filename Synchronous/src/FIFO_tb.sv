@@ -120,7 +120,7 @@ module testbench;
     else
       $display("FAIL: FIFO final state incorrect");
 
-    $display("Simulation Complete!");
+    $display("Simulation Complete");
     $finish;
 
   end
