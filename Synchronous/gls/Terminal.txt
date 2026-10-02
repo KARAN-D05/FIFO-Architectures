@@ -1,4 +1,3 @@
-VCD info: dumpfile FIFO.vcd opened for output.
 time = 0 | din = 00 | wrEn = 0 | rdEn = 0 | dout = xx | full = x | empty = x
 time = 15000 | din = 00 | wrEn = 0 | rdEn = 0 | dout = 00 | full = 0 | empty = 1
 PASS: FIFO reset state
@@ -122,5 +121,3 @@ time = 405000 | din = 0f | wrEn = 0 | rdEn = 1 | dout = 0f | full = 0 | empty = 
 PASS: Read 0f
 time = 406000 | din = 0f | wrEn = 0 | rdEn = 0 | dout = 0f | full = 0 | empty = 1
 PASS: FIFO drained successfully
-Simulation Complete!
-FIFO_tb.sv:120: $finish called at 407000 (1ps)
