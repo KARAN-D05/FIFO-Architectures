@@ -7,8 +7,6 @@ import scala.util.Random
 
 class FIFOTest extends AnyFlatSpec with ChiselSim {
 
-  override def buildDir = Paths.get("/home/kavon05/chisel-build")
-
   "FIFO" should "correctly implement FIFO behavior" in {
     simulate(new FIFO) { dut =>
 
@@ -120,4 +118,3 @@ class FIFOTest extends AnyFlatSpec with ChiselSim {
     }
   }
 }
-
