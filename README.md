@@ -27,6 +27,19 @@ The following table summarizes post-synthesis implementation results obtained us
 |---|---|---|---|---|
 | [Synchronous FIFO](Synchronous) | 5915.6736 µm² | 3.03 ns | ~330 MHz | 865 µW |
 
+## 🔄 Reproduction
+
+### Generate SystemVerilog
+
+```bash
+make generate
+```
+
+### Run Chisel Verification
+```bash
+make test
+```
+
 ## 📜License
 - Source code and HDL files are licensed under the MIT License.
 - Documentation, diagrams, images, and PDFs are licensed under Creative Commons Attribution 4.0 (CC BY 4.0).
