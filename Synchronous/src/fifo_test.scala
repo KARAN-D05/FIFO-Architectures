@@ -118,4 +118,3 @@ class FIFOTest extends AnyFlatSpec with ChiselSim {
     }
   }
 }
-
