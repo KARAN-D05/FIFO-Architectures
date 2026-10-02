@@ -4,7 +4,6 @@ A parameterized synchronous FIFO implemented in Chisel, using a single clock dom
 
 ## Features
 
-- Single-clock FIFO architecture
 - Parameterized data width and depth
 - Circular read/write pointers
 - Full and empty detection
