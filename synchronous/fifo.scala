@@ -1,6 +1,6 @@
 //> using scala 2.13.18
-//> using dep org.chipsalliance::chisel:7.15.0
-//> using plugin org.chipsalliance:::chisel-plugin:7.15.0
+//> using dep org.chipsalliance::chisel:7.16.0
+//> using plugin org.chipsalliance:::chisel-plugin:7.16.0
 
 import chisel3._
 import chisel3.util._
