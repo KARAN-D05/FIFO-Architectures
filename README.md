@@ -3,14 +3,14 @@ A collection of FIFO architectures implemented in Chisel, exploring synchronous,
 
 ## 🛠️ Tools & Technologies
 ![Scala](https://img.shields.io/badge/Scala-Elaboration-DC322F?style=flat-square)
-![Chisel](https://img.shields.io/badge/Chisel-Hardware_Construction-FF6F00?style=flat-square)
+![Chisel](https://img.shields.io/badge/Chisel-Hardware_Construction-D81B60?style=flat-square)
 ![Icarus Verilog](https://img.shields.io/badge/IVerilog-Simulation-1E88E5?style=flat-square)
 ![GTKWave](https://img.shields.io/badge/GTKWave-Waveforms-00897B?style=flat-square)
 ![Yosys](https://img.shields.io/badge/Yosys-Synthesis-43A047?style=flat-square)
 ![OpenSTA](https://img.shields.io/badge/OpenSTA-Timing_Analysis-8E24AA?style=flat-square)
 
 ## 🏛️ Architectures
-[Synchronous FIFO](Synchronous) - Single-clock FIFO using circular read/write pointers and occupancy tracking
+1) [Synchronous FIFO](Synchronous) - Single-clock FIFO using circular read/write pointers and occupancy tracking
 
 <p align="center">
   <img src="Synchronous/images/waveform.png" width="1000">
