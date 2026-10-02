@@ -32,12 +32,12 @@ The following table summarizes post-synthesis implementation results obtained us
 ### Generate SystemVerilog
 
 ```bash
-make generate
+scala-cli run fifo.scala
 ```
 
 ### Run Chisel Verification
 ```bash
-make test
+scala-cli test fifo.scala fifo_test.scala --dependency org.scalatest::scalatest:3.2.20
 ```
 
 ## 📜License
