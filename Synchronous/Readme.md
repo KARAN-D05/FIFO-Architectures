@@ -11,11 +11,10 @@ A parameterized synchronous FIFO implemented in Chisel, using a single clock dom
 - Concurrent read/write support
 - Chisel-native randomized verification
 - Independent SystemVerilog RTL verification
-- Sky130HD synthesis and static timing analysis
 - Gate-level simulation verified
 
 <p align="center">
-  <img src="images/FIFO.png" width="800"/>
+  <img src="images/FIFO.png" width="1000"/>
   <br>
   <sub>Synchronous FIFO Synthesis</sub>
 </p>
