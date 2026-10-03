@@ -1,4 +1,3 @@
-VCD info: dumpfile FIFO.vcd opened for output.
 time = 0 | din = 00 | wrEn = 0 | rdEn = 0 | dout = 00 | full = 0 | empty = 1
 PASS: FIFO reset state
 time = 60000 | din = 0a | wrEn = 1 | rdEn = 0 | dout = 00 | full = 0 | empty = 1
@@ -1342,5 +1341,3 @@ time = 8141000 | din = 20 | wrEn = 0 | rdEn = 1 | dout = 20 | full = 0 | empty =
 time = 8142000 | din = 20 | wrEn = 0 | rdEn = 0 | dout = 20 | full = 0 | empty = 1
 PASS: FIFO empty after concurrent test
 ALL TESTS PASSED
-Simulation Complete
-FIFO_tb.sv:233: $finish called at 8219000 (1ps)
