@@ -16,8 +16,7 @@ class FIFOTestHarness extends Module {
     val full  = Output(Bool())
     val empty = Output(Bool())
   })
-
-  // rdClock = clock / 2
+  
   val rdClockReg = RegInit(false.B)
   rdClockReg := ~rdClockReg
 
@@ -41,7 +40,6 @@ class FIFOTest extends AnyFlatSpec with ChiselSim {
 
   def pattern(i: Int): BigInt = BigInt((i * 13 + 5) & 0xFF)
 
-  // Runs `body` on a freshly reset DUT with helpers in scope.
   private def withDut(body: (FIFOTestHarness, Helpers) => Unit): Unit =
     simulate(new FIFOTestHarness) { dut =>
       dut.io.din.poke(0.U)
@@ -52,8 +50,7 @@ class FIFOTest extends AnyFlatSpec with ChiselSim {
     }
 
   class Helpers(dut: FIFOTestHarness) {
-
-    // wrClock = clock, so 1 step = 1 write edge
+    
     def write(data: BigInt): Unit = {
       dut.io.din.poke(data.U)
       dut.io.wrEn.poke(true.B)
@@ -62,7 +59,6 @@ class FIFOTest extends AnyFlatSpec with ChiselSim {
       dut.clock.step()
     }
 
-    // rdClock = clock/2, so 2 steps = exactly 1 read edge
     def read(expected: BigInt): Unit = {
       dut.io.rdEn.poke(true.B)
       dut.clock.step(2)
@@ -71,10 +67,8 @@ class FIFOTest extends AnyFlatSpec with ChiselSim {
       dut.clock.step()
     }
 
-    // wait for the write pointer to cross into the read domain
     def waitNotEmpty(): Unit = dut.clock.step(8)
 
-    // wait for the read pointer to cross into the write domain
     def waitFullRelease(): Unit = dut.clock.step(8)
 
     def fill(): Unit =
@@ -116,7 +110,6 @@ class FIFOTest extends AnyFlatSpec with ChiselSim {
       dut.io.rdEn.poke(false.B)
       dut.io.empty.expect(true.B)
 
-      // FIFO must still work normally afterwards
       h.write(0x42)
       h.waitNotEmpty()
       h.read(0x42)
@@ -137,8 +130,7 @@ class FIFOTest extends AnyFlatSpec with ChiselSim {
 
       h.write(0xFF)
       dut.io.full.expect(true.B)
-
-      // the 0xFF must never show up
+      
       h.drain()
       dut.clock.step(4)
       dut.io.empty.expect(true.B)
@@ -155,8 +147,7 @@ class FIFOTest extends AnyFlatSpec with ChiselSim {
       h.read(pattern(0))
       h.waitFullRelease()
       dut.io.full.expect(false.B)
-
-      // the freed slot can be reused, and order is preserved
+      
       h.write(0x99)
       for (i <- 1 until Depth) h.read(pattern(i))
       h.read(0x99)
@@ -188,7 +179,6 @@ class FIFOTest extends AnyFlatSpec with ChiselSim {
       var rcvd   = 0
       var guard  = 0
 
-      // One slot = 2 clock steps = 2 write edges and 1 read edge.
       while (rcvd < total && guard < 20000) {
         guard += 1
 
@@ -202,11 +192,11 @@ class FIFOTest extends AnyFlatSpec with ChiselSim {
         if (doRead) dut.io.rdEn.poke(true.B)
 
         dut.clock.step()
-        dut.io.wrEn.poke(false.B)      // wrEn lasts exactly 1 write edge
+        dut.io.wrEn.poke(false.B)  
         if (doWrite) { model.enqueue(pattern(sent)); sent += 1 }
 
         dut.clock.step()
-        dut.io.rdEn.poke(false.B)      // rdEn lasted 2 steps = 1 read edge
+        dut.io.rdEn.poke(false.B)  
 
         if (doRead) {
           assert(model.nonEmpty, "FIFO returned data that was never written")
