@@ -1,5 +1,5 @@
 # FIFO Architectures
-A collection of FIFO architectures implemented in Chisel, exploring synchronous and asynchronous (CDC) FIFO designs. The Chisel implementations are elaborated into SystemVerilog and then taken through a conventional RTL simulation, verification, synthesis, and timing-analysis flow.
+A collection of FIFO architectures implemented in Chisel, exploring synchronous and asynchronous (CDC) FIFO design. The Chisel implementations are elaborated into SystemVerilog and then taken through a conventional RTL simulation, verification, synthesis, and timing-analysis flow.
 
 ## 🛠️ Tools & Technologies
 ![Scala](https://img.shields.io/badge/Scala-Elaboration-DC322F?style=flat-square)
