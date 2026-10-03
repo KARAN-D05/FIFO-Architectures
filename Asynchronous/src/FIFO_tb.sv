@@ -105,8 +105,7 @@ module testbench;
 
   initial begin
 
-    $monitor("time = %0t | din = %h | wrEn = %b | rdEn = %b | dout = %h | full = %b | empty = %b",
-             $time, din, wrEn, rdEn, dout, full, empty);
+    $monitor("time = %0t | din = %h | wrEn = %b | rdEn = %b | dout = %h | full = %b | empty = %b",$time, din, wrEn, rdEn, dout, full, empty);
 
     $dumpfile("FIFO.vcd");
     $dumpvars(0, testbench);
