@@ -17,6 +17,8 @@ The following table summarizes post-synthesis implementation results obtained us
 | Architecture | Estimated Area | Critical Path | Estimated Fmax | Estimated Total Power |
 |---|---|---|---|---|
 | [Synchronous FIFO](Synchronous) | 5915.6736 µm² | 3.03 ns | ~330 MHz | 865 µW |
+| [Asynchronous FIFO](Asynchronous) |  6730.2048 µm² |  2.94 ns |  ~340 MHz |  2130 µW |
+
 
 <div align="center">
     <img src="Synchronous/images/waveform.png" 
