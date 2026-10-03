@@ -31,7 +31,7 @@ A parameterized synchronous FIFO implemented in Chisel, using a single clock dom
 
 ## Static Timing Analysis
 
-**Tool:** OpenSTA
+Tool: OpenSTA
 
 | Metric | Value |
 |---|---|
