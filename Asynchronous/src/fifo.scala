@@ -28,13 +28,11 @@ class AsyncFIFO(val width: Int, val depth: Int) extends Module {
   val addrWidth = log2Ceil(depth)
   val ptrWidth  = addrWidth + 1
 
-  // Memory lives in the write clock domain
   val mem = withClock(io.wrClock) { Mem(depth, UInt(width.W)) }
 
   val wrPtrGray = Wire(UInt(ptrWidth.W))
   val rdPtrGray = Wire(UInt(ptrWidth.W))
 
-  // ---------------- Write domain ----------------
   withClockAndReset(io.wrClock, reset.asAsyncReset) {
 
     val wrPtr        = RegInit(0.U(ptrWidth.W))
@@ -72,7 +70,6 @@ class AsyncFIFO(val width: Int, val depth: Int) extends Module {
     io.full := fullReg
   }
 
-  // ---------------- Read domain ----------------
   withClockAndReset(io.rdClock, reset.asAsyncReset) {
 
     val rdPtr        = RegInit(0.U(ptrWidth.W))
