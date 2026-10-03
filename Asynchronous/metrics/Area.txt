@@ -1,5 +1,3 @@
-20. Printing statistics.
-
 === FIFO ===
 
    Number of wires:                942
