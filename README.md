@@ -27,6 +27,14 @@ The following table summarizes post-synthesis implementation results obtained us
 |---|---|---|---|---|
 | [Synchronous FIFO](Synchronous) | 5915.6736 µm² | 3.03 ns | ~330 MHz | 865 µW |
 
+## 🧪 Verification
+
+Each FIFO architecture is verified at multiple levels:
+
+- **Chisel-native verification** - directed and randomized testing using Scala/Chisel
+- **RTL verification** - independent SystemVerilog testbench on generated RTL
+- **Gate-level simulation** - post-synthesis verification using Sky130HD functional cell models
+
 ## 🔄 Reproduction
 
 ### Generate SystemVerilog
