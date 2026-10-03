@@ -9,15 +9,6 @@ A collection of FIFO architectures implemented in Chisel, exploring synchronous,
 ![Yosys](https://img.shields.io/badge/Yosys-Synthesis-43A047?style=flat-square)
 ![OpenSTA](https://img.shields.io/badge/OpenSTA-Timing_Analysis-8E24AA?style=flat-square)
 
-## 🏛️ Architectures
-- [Synchronous FIFO](Synchronous) - Single-clock FIFO using circular read/write pointers and occupancy tracking.
-
-<div align="center">
-    <img src="Synchronous/images/waveform.png" 
-         width="1500">
-   <sub></b> <p> Synchronous FIFO </p>
-</div>
-
 ## 🔬 Physical Characterization
 The following table summarizes post-synthesis implementation results obtained using the Sky130 HD standard-cell library.
 
@@ -26,6 +17,12 @@ The following table summarizes post-synthesis implementation results obtained us
 | Architecture | Estimated Area | Critical Path | Estimated Fmax | Estimated Total Power |
 |---|---|---|---|---|
 | [Synchronous FIFO](Synchronous) | 5915.6736 µm² | 3.03 ns | ~330 MHz | 865 µW |
+
+<div align="center">
+    <img src="Synchronous/images/waveform.png" 
+         width="1500">
+   <sub></b> <p> Synchronous FIFO </p>
+</div>
 
 ## 🧪 Verification
 
