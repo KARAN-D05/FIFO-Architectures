@@ -6,7 +6,7 @@ import scala.util.Random
 
 class FIFOTest extends AnyFlatSpec with ChiselSim {
 
-  "FIFO" should "correctly implement elastic FIFO behavior" in {
+  "FIFO" should "correctly implement Elastic FIFO behavior" in {
     simulate(new FIFO) { dut =>
 
       def resetFIFO(): Unit = {
