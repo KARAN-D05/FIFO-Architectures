@@ -72,8 +72,7 @@ module testbench;
 
   initial begin
 
-    $monitor("time = %0t | din = %h | inValid = %b | inReady = %b | dout = %h | outValid = %b | outReady = %b",
-             $time, din, inValid, inReady, dout, outValid, outReady);
+    $monitor("time = %0t | din = %h | inValid = %b | inReady = %b | dout = %h | outValid = %b | outReady = %b", $time, din, inValid, inReady, dout, outValid, outReady);
 
     $dumpfile("FIFO.vcd");
     $dumpvars(0, testbench);
@@ -182,7 +181,7 @@ module testbench;
     else
       $display("FAIL: FIFO state incorrect after backpressure test");
 
-    $display("Simulation Complete");
+    $display("Simulation Complete!");
     $finish;
 
   end
