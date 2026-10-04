@@ -83,9 +83,7 @@ class FIFO extends Module {
     val outReady = Input(Bool())
   })
 
-
   val fifo = Module(new ElasticFIFO(8, 16))
-
 
   fifo.io.inData  := io.din
   fifo.io.inValid := io.inValid
