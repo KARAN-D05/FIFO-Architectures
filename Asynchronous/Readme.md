@@ -8,7 +8,6 @@ A parameterized asynchronous FIFO implemented in Chisel, using independent read 
 - Independent read and write clock domains
 - Circular read/write pointers
 - Full and empty detection
-- Concurrent read/write support across clock domains
 - Cross-domain pointer synchronization
 - Chisel-native randomized verification
 - Independent SystemVerilog RTL verification
