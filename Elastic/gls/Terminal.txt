@@ -1,4 +1,3 @@
-VCD info: dumpfile FIFO.vcd opened for output.
 time = 0 | din = 00 | inValid = 0 | inReady = x | dout = xx | outValid = x | outReady = 0
 time = 15000 | din = 00 | inValid = 0 | inReady = 1 | dout = xx | outValid = 0 | outReady = 0
 PASS: FIFO reset state
@@ -132,6 +131,3 @@ PASS: FIFO held data during backpressure
 time = 476000 | din = 7b | inValid = 0 | inReady = 1 | dout = 7b | outValid = 1 | outReady = 1
 time = 485000 | din = 7b | inValid = 0 | inReady = 1 | dout = 01 | outValid = 0 | outReady = 1
 PASS: FIFO empty after backpressure test
-Simulation Complete
-FIFO_tb.sv:182: $finish called at 486000 (1ps)
-time = 486000 | din = 7b | inValid = 0 | inReady = 1 | dout = 01 | outValid = 0 | outReady = 0
