@@ -52,10 +52,7 @@ class AsyncFIFO(val width: Int, val depth: Int) extends Module {
     val wrPtrNext     = wrPtr + wrDo.asUInt
     val wrPtrGrayNext = wrPtrNext ^ (wrPtrNext >> 1)
 
-    val fullCompare = Cat(
-      ~rdPtrGraySync2(ptrWidth - 1, ptrWidth - 2),
-      rdPtrGraySync2(ptrWidth - 3, 0)
-    )
+    val fullCompare = Cat(~rdPtrGraySync2(ptrWidth - 1, ptrWidth - 2), rdPtrGraySync2(ptrWidth - 3, 0))
 
     val fullNext = wrPtrGrayNext === fullCompare
 
